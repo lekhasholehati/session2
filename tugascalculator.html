@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>	</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<h5>Angka satu</h5>
+	<input type="text" id="satu">
+	<h5>Angka 2</h5>
+	<input type="text" id="dua"> </br> </br>
+	<input type="submit" id="tambah" value="+">
+	<input type="submit" id="kurang" value="-">
+	<input type="submit" id="kali" value="x">
+	<input type="submit" id="bagi" value="/">
+
+	<div id="hasil">
+		
+	</div>
+	
+	<script type="text/javascript">
+	function tambah(){
+	var satu = Number(document.getElementById("satu").value)
+	var dua = Number(document.getElementById("dua").value)
+	document.getElementById("hasil").innerHTML = "<p> Hasil : "+(satu+dua)+"</p>"
+
+	}
+	
+	document.getElementById("tambah").onclick = tambah
+
+	function kurang(){
+	var satu = Number(document.getElementById("satu").value)
+	var dua = Number(document.getElementById("dua").value)
+	document.getElementById("hasil").innerHTML = "<p> Hasil : "+(satu-dua)+"</p>"
+
+	}
+
+	document.getElementById("kurang").onclick = kurang
+
+	function kali(){
+	var satu = Number(document.getElementById("satu").value)
+	var dua = Number(document.getElementById("dua").value)
+	document.getElementById("hasil").innerHTML = "<p> Hasil : "+(satu*dua)+"</p>"
+
+	}
+	
+	document.getElementById("kali").onclick = kali
+
+	function bagi(){
+	var satu = Number(document.getElementById("satu").value)
+	var dua = Number(document.getElementById("dua").value)
+	document.getElementById("hasil").innerHTML = "<p> Hasil : "+(satu/dua)+"</p>"
+
+	}
+	
+	document.getElementById("bagi").onclick = bagi
+
+		
+	</script>
+</body>
+</html>
